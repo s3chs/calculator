@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* CSS RESET */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-region: none;
+}
+
+body {
+  background-color: lightsteelblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.section-container {
+  display: grid;
+  place-content: center;
+  font-family: "Roboto", sans-serif;
+  height: calc(100vh - 60px);
+  width: 100vw;
+  font-size: 2rem;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.container {
+  margin-top: 20px;
+  height: 600px;
+  width: 400px;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  color: white;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: rgb(54, 52, 52);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: lightslategrey;
+}
+
+.light-gray {
+  background-color: gray;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.light-gray:hover {
+  background-color: white;
+}
+
+.orange {
+  background-color: orange;
+  transition: 0.3s ease-in-out;
+}
+
+.orange:hover {
+  background-color: white;
+  color: orange;
+}
+
+.zero {
+  grid-column: 1 / span 2;
+  border-radius: 25px;
+  place-content: unset;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+/* DARK MODE */
+.dark-mode {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-mode:hover {
+  background-color: black;
+  color: lightsteelblue;
+}
+
+.dark {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+button.activated {
+  background-color: black;
+}
+
+.activated {
+  background-color: lightcoral;
+  border: 1px solid white;
+  color: white;
+}
+
+.dark-mode.activated:hover {
+  background-color: white;
+  color: black;
+}
+
+.light-gray.activated:hover {
+  background-color: black;
+}
+
+.orange.reverse-orange {
+  background-color: pink;
+  color: black;
+}
+.orange.reverse-orange:hover {
+  background-color: black;
+  color: white;
+}
+
+.dark-screen {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .dark-mode {
+    padding: 10px;
+    font-size: 0.9rem;
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    flex-direction: row;
+  }
+
+  .container {
+    height: 500px;
+    width: 325px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 425px;
+    width: 275px;
+  }
+  .screen {
+    font-size: 2rem;
+  }
+}

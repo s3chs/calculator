@@ -1,0 +1,36 @@
+const traductions = {
+  FR: {
+    title: "Calculette React",
+    enter: "Entrer",
+    auth: "Authentifiez-vous pour accéder à la calculette",
+    connect: "Connexion",
+    mail: "Email",
+    mailPlaceholder: "Entrez votre mail",
+    psw: "Mot de passe",
+    pswPlaceholder: "Entrez votre mot de passe",
+    connectBtn: "Se connecter",
+    errorSignIn: "Email ou mot de passe incorrect.",
+    errorSignUp: "Email incorrect ou mot de passe inférieur à 6 caractères.",
+    signUp: "Inscription",
+    signUpBtn: "S'inscrire",
+    darkMode: "Activer le dark mode",
+  },
+  EN: {
+    title: "React Calculator",
+    enter: "Enter",
+    auth: "Authenticate yourself to access the calculator",
+    connect: "Log in",
+    mail: "Email",
+    mailPlaceholder: "Enter your mail",
+    psw: "Password",
+    pswPlaceholder: "Enter your password",
+    connectBtn: "Connect",
+    errorSignIn: "Incorrect email or password.",
+    errorSignUp: "Incorrect email or password is less than 6 characters.",
+    signUp: "Sign up",
+    signUpBtn: "Create account",
+    darkMode: "Toggle dark mode",
+  },
+};
+
+export default traductions;

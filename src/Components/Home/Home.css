@@ -1,0 +1,35 @@
+.global-container {
+  padding-top: 10vh;
+  min-height: 100vh;
+  width: 100vw;
+  color: black;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.title p {
+  width: 100vw;
+  text-align: center;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade-in {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .title p {
+    font-size: 1.2rem;
+  }
+
+  .auth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

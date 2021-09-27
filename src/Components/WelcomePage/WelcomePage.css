@@ -1,0 +1,28 @@
+.welcome-container {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+button  {
+  text-align: center;
+}
+
+.fade {
+  opacity: 0 !important;
+  cursor: default;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
