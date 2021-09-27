@@ -7,14 +7,11 @@ let browserLang = navigator.language.slice(0, 2).toUpperCase();
 // console.log(browserLang);
 
 if (supportedLangs.indexOf(browserLang) === -1) {
-  console.log("Language is not supported");
   browserLang = "EN";
 }
 
 const ContextProvider = (props) => {
   const [lang, setLang] = useState(browserLang);
-
-  //   console.log(lang);
 
   const toggleLang = (changeLang) => {
     setLang(changeLang);

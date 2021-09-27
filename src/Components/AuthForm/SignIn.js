@@ -9,12 +9,10 @@ import "./AuthForm.css";
 export default function SignIn() {
   const showAuth = useSelector((state) => state);
   const dispatch = useDispatch();
-
   const { lang } = useContext(Context);
   const [error, setError] = useState("");
   const history = useHistory();
   const { login } = useContext(AuthContext);
-
   const inputs = useRef([]);
 
   const addInputs = (el) => {
